@@ -1,1 +1,1 @@
-# docker-python3.7dev-flyway
+# docker-python3.7dev-pg-flyway
