@@ -48,6 +48,6 @@ RUN apk --no-cache add --update bash openssl \
     && rm flyway-commandline-${FLYWAY_VERSION}.tar.gz \
     && ln -s /flyway/flyway /usr/local/bin/flyway
 
-RUN apk add --no-cache --virtual .pynacl_deps build-base python3-dev libffi-dev libressl-dev && \
+RUN apk add --no-cache --virtual .pynacl_deps build-base python3-dev libffi-dev && \
     apk add --no-cache postgresql-libs && \
     apk add --no-cache --virtual .build-deps gcc musl-dev postgresql-dev
